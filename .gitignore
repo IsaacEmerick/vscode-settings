@@ -1,0 +1,9 @@
+# Nunca versionar dados locais/sensiveis do VS Code
+*.vscdb
+*.vscdb.backup
+globalStorage/
+workspaceStorage/
+History/
+sync/
+*.bak-*
+.env
