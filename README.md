@@ -4,13 +4,13 @@ Backup das minhas configuracoes do VS Code (Windows).
 
 ## Conteudo
 
-| Arquivo | Descricao |
-|---|---|
-| `settings.json` | Configuracoes do usuario |
-| `extensions.txt` | Lista de extensoes instaladas |
-| `extensions-notes.json` | Descricao de cada extensao (usada no modo de selecao) |
-| `install.ps1` | Restaura em uma maquina nova, perguntando o que importar |
-| `backup.ps1` | Atualiza este repo com as configs atuais |
+| Arquivo                 | Descricao                                                |
+| ----------------------- | -------------------------------------------------------- |
+| `settings.json`         | Configuracoes do usuario                                 |
+| `extensions.txt`        | Lista de extensoes instaladas                            |
+| `extensions-notes.json` | Descricao de cada extensao (usada no modo de selecao)    |
+| `install.ps1`           | Restaura em uma maquina nova, perguntando o que importar |
+| `backup.ps1`            | Atualiza este repo com as configs atuais                 |
 
 ## Restaurar em uma maquina nova
 
@@ -24,7 +24,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 
 O script pergunta o que voce quer importar:
 
-```
+```powershell
 O que voce quer importar?
   [1] Apenas as configuracoes  (settings.json, keybindings, snippets)
   [2] Apenas as extensoes
@@ -34,7 +34,7 @@ O que voce quer importar?
 
 Se escolher importar extensoes, ele pergunta de novo:
 
-```
+```powershell
   [1] Instalar todas as N que faltam
   [2] Escolher uma a uma
   [0] Pular as extensoes
@@ -74,7 +74,7 @@ modo de selecao (e opcional; sem descricao, aparece so o id).
 
 ## Onde ficam os arquivos no Windows
 
-```
+```text
 %APPDATA%\Code\User\settings.json
 %APPDATA%\Code\User\keybindings.json
 %APPDATA%\Code\User\snippets\
@@ -86,4 +86,4 @@ ficam de fora pelo `.gitignore` — e onde extensoes guardam tokens e sessoes.
 ## Fonte
 
 O `settings.json` usa **JetBrains Mono** / **JetBrainsMono Nerd Font**.
-Instale antes de restaurar: https://www.nerdfonts.com/font-downloads
+Instale antes de restaurar: <https://www.nerdfonts.com/font-downloads>
